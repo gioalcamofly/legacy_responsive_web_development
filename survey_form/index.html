@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main> 
+
+            <header>
+                <h1 id="title">¿Lo sabes todo de la UDLP?</h1>
+                <p id="description">Demuestra si sabes todo lo que tienes que saber de la UD</p>
+            </header>
+
+            <section id="main">
+
+                <form id="survey-form">
+
+                    <label id="name-label">
+                        Tu nombre: 
+                        <input type="text" id="name" placeholder="¿Como te llamas?" class="form-control" required>
+                    </label>
+
+                    <label id="email-label">
+                        Tu e-mail: 
+                        <input type="email" id="email" placeholder="¿Cual es tu e-mail?" class="form-control" required>
+                    </label>
+
+                    <label id="number-label">
+                        Tu edad: 
+                        <span>(opcional)</span>
+                        <input type="number" id="number" placeholder="¿Que edad tienes?" min="5" max="99" class="form-control"> 
+                    </label>
+
+                    <label>
+                        ¿Quien es el capitán del primer equipo?
+                        <select name="udlp-captain" id="dropdown" class="form-control">
+                            <option value="curbelo">Eric Curbelo</option>
+                            <option value="viera">Jonathan Viera</option>
+                            <option value="kirian">Kirian Rodríguez</option>
+                            <option value="moleiro">Alberto Moleiro</option>
+                            <option value="navas">Raúl Navas</option>
+                        </select>
+                    </label>
+
+                    <fieldset>
+                        <legend>¿En qué año debutó Jonathan Viera?</legend>
+                        <label>
+                            <input type="radio" name="viera-debut" value="2008" class="form-option" checked>2008
+                        </label>
+                        <label>
+                            <input type="radio" name="viera-debut" value="2009" class="form-option">2009
+                        </label>
+                        <label>
+                            <input type="radio" name="viera-debut" value="2010" class="form-option">2010
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>¿Qué jugadores han marcado esta temporada</legend>
+                        <label>
+                            <input type="checkbox" name="goalscorers" value="viera" class="form-option">Jonathan Viera
+                        </label>
+                        <label>
+                            <input type="checkbox" name="goalscorers" value="curbelo" class="form-option">Eric Curbelo
+                        </label>
+                        <label>
+                            <input type="checkbox" name="goalscorers" value="valles" class="form-option">Álvaro Vallés
+                        </label>
+                        <label>
+                            <input type="checkbox" name="goalscorers" value="cardona" class="form-option">Sergi Cardona
+                        </label>
+                        <label>
+                            <input type="checkbox" name="goalscorers" value="hernani" class="form-option">Hernani
+                        </label>
+                    </fieldset>
+
+                    <label>
+                        ¿Añadirías alguna otra pregunta al cuestionario? ¿Cuál?
+                        <textarea id="comments" place="¿Cuál sería tu pregunta?" class="form-control"></textarea>
+                    </label>
+
+                    <button id="submit" type="submit">Enviar cuestionario</button>
+
+                </form>
+
+            </section>
+
+        </main>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#main {
+    margin-top: 2em;
+    background: rgb(160, 160, 160, 0.2);
+    padding: 10px;
+}
+
+#image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#img-div {
+    padding: 1em;
+}
+
+ul {
+    margin: 0 auto 2em auto;
+    text-align: left;
+    max-width: 50%;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+figure {
+    background: white;
+}
+
+@media (max-width: 700px) {
+    ul {
+        max-width: 100%;
+    }
+}
