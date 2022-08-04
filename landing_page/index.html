@@ -62,15 +62,15 @@
                 </ul>
             </section>
             <section id="howitworks">
-                <iframe src="https://www.youtube.com/embed/Gj59P38fgBs" frameborder=0 allowfullscreen></iframe>
+                <iframe id="video" src="https://www.youtube.com/embed/Gj59P38fgBs" frameborder=0 allowfullscreen></iframe>
             </section>
             <section id="contact">
                 <h3>Contact us</h3>
                 <img id="contact-img" src="./images/light_painter_logo.png" alt="logo" />
-                <form id="form">
-                    <input type="text" id="name" placeholder="Enter your name" class="form-control">
-                    <input type="email" id="email" placeholder="Enter your email address" class="form-control">
-                    <textarea id="question" placeholder="Enter your doubts" class="form-control"></textarea>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input type="text" id="name" name="name" placeholder="Enter your name" class="form-control">
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" class="form-control">
+                    <textarea id="question" name="question" placeholder="Enter your doubts" class="form-control"></textarea>
                     <input type="submit" id="submit" value="Send">
                 </form>
             </section>
